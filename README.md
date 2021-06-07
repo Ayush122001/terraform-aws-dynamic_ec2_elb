@@ -39,7 +39,7 @@
     - Default: "HTTP:80/index.php"
 
 
-###- Optional
+### - Optional
 
 - internal
     - Whether Loadbalancer is internal or not
