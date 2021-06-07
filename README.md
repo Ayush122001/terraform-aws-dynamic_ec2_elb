@@ -6,7 +6,7 @@
 <pre>
 module "dynamic_ec2_elb" {
   source="Ayush122001/dynamic_ec2_elb/aws"
-  version = "1.0.0"
+  version = "1.0.1"
   aws_count=4
   aws_az="ap-south-1"
   instance_port={"HTTP": 80}
