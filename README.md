@@ -1,5 +1,27 @@
 # terraform-aws-dynamic_instance_behind_LoadBalancer
 
+# Example:
+
+module "dynamic_instance_behind_LoadBalancer" {
+  source="Ayush122001/dynamic_instance_behind_LoadBalancer/aws"
+  version = "1.0.0"
+  aws_count=4
+  aws_az="ap-south-1"
+  instance_port={"HTTP": 80}
+  lb_port={"HTTP": 80}
+  instance_protocol=["HTTP"]
+  lb_protocol={"HTTP" : "HTTP"}
+  aws_ami="ami-04c798aa91b4238ab"
+  health_check_target="HTTP:80/index.php"
+  internal=false
+  health_check_interval=30
+  health_check_timeout=3
+  associate_public_ip=true
+  sg_id=["sg-08a0f3cdae47fbbd6"]
+  instance_type="t2.micro"
+  key_name="keyhadoop"
+}
+
 ## This module has automated the process of launching ec2 instance from user provided ami dynamically placing them behind the Load Balancer.
 
 ## variables: 
@@ -72,4 +94,3 @@
     - Default = 1
  
  
-## Example
