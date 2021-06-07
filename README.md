@@ -32,8 +32,6 @@
     - Default = {"HTTP": "HTTP"}
     - **Syntax** = {"instance_protocol": "lb_protocol"}
 
-    - {"HTTP" : "HTTP"}
-
 - aws_ami **// Required**
     - ami id for launching instance **Required**
 
