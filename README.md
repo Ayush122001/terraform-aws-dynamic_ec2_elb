@@ -2,9 +2,8 @@
 
 ## This module has automated the process of launching ec2 instance from user provided ami &amp; placing them behind the Load Balancer.
 
-### variables: 
-
-#### Required:
+## variables: 
+### - Required:
 
 - aws_az  **// Required**
     - Availability zone
@@ -42,7 +41,7 @@
     - Default: "HTTP:80/index.php"
 
 
-#### Optional
+###- Optional
 
 - internal
     - Whether Loadbalancer is internal or not
