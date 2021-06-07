@@ -1,4 +1,4 @@
-# terraform-aws-dynamic_instance_behind_LoadBalancer
+# terraform-aws-dynamic_ec2_elb
 
 ## This module has automated the process of launching ec2 instance from user provided ami dynamically placing them behind the Load Balancer.
 
