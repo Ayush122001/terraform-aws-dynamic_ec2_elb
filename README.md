@@ -70,3 +70,6 @@
 - aws_count  
     - number of instance to be launched
     - Default = 1
+ 
+ 
+## Example
