@@ -4,8 +4,8 @@
 
 # Example:
 <pre>
-module "dynamic_instance_behind_LoadBalancer" {
-  source="Ayush122001/dynamic_instance_behind_LoadBalancer/aws"
+module "dynamic_ec2_elb" {
+  source="Ayush122001/dynamic_ec2_elb/aws"
   version = "1.0.0"
   aws_count=4
   aws_az="ap-south-1"
