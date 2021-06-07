@@ -1,7 +1,7 @@
 # terraform-aws-dynamic_instance_behind_LoadBalancer
 
 # Example:
-
+<pre>
 module "dynamic_instance_behind_LoadBalancer" {
   source="Ayush122001/dynamic_instance_behind_LoadBalancer/aws"
   version = "1.0.0"
@@ -21,7 +21,7 @@ module "dynamic_instance_behind_LoadBalancer" {
   instance_type="t2.micro"
   key_name="keyhadoop"
 }
-
+</pre>
 ## This module has automated the process of launching ec2 instance from user provided ami dynamically placing them behind the Load Balancer.
 
 ## variables: 
