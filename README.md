@@ -1,5 +1,7 @@
 # terraform-aws-dynamic_instance_behind_LoadBalancer
 
+## This module has automated the process of launching ec2 instance from user provided ami dynamically placing them behind the Load Balancer.
+
 # Example:
 <pre>
 module "dynamic_instance_behind_LoadBalancer" {
@@ -22,7 +24,6 @@ module "dynamic_instance_behind_LoadBalancer" {
   key_name="keyhadoop"
 }
 </pre>
-## This module has automated the process of launching ec2 instance from user provided ami dynamically placing them behind the Load Balancer.
 
 ## variables: 
 ### - Required:
