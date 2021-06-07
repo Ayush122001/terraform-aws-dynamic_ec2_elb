@@ -5,37 +5,37 @@
 ## variables: 
 ### - Required:
 
-- aws_az  **// Required**
+- aws_az  **(Required)**
     - Availability zone
     - Default = "ap-south-1" *Mumbai*
 
-- instance_port **// Required**
+- instance_port **(Required)**
     - Port number on which Load Balancer will connect to instance  
     - Enter value in *map data* structure like  **{"HTTP": 80}**
     - Default = {"HTTP": 80}
     - **Syntax** = {"instance_protocol": port_number} 
 
-- lb_port  **// Required**
+- lb_port  **(Required)**
     - Port number on which client will connect to Load Balancer  
     - Enter value in *map data* structure like  **{"HTTP": 80}**
     - Default = {"HTTP": 80}
     - **Syntax** = {"instance_protocol": port_number}
 
-- instance_protocol **// Required**
+- instance_protocol **(Required)**
     - Protocol on which instance will work
     - Enter valur in *list* data structure
     - Default: ["HTTP"]
 
-- lb_protocol **// Required**
+- lb_protocol **(Required)**
     - Protocol on which Load Balancer will work/listen
     - Enter value in *map data* structure like  **{"HTTP": HTTP}**
     - Default = {"HTTP": "HTTP"}
     - **Syntax** = {"instance_protocol": "lb_protocol"}
 
-- aws_ami **// Required**
+- aws_ami **(Required)**
     - ami id for launching instance **Required**
 
-- health_check_target **Required**
+- health_check_target **(Required)**
     - Default: "HTTP:80/index.php"
 
 
