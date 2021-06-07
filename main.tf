@@ -3,7 +3,7 @@
 ###############
 resource "aws_instance" "aws_backend" {
   count = var.aws_count
-  ami           = var.aws_ami
+  ami = var.aws_ami
   associate_public_ip_address=var.associate_public_ip
   instance_type = var.instance_type
   key_name=var.key_name 
